@@ -1,14 +1,24 @@
-# WordPress core files - don't track
-/wp-admin/
-/wp-includes/
-/wp-content/uploads/
-/wp-content/cache/
-/wp-content/upgrade/
-/wp-content/backup-*
-/*.log
-*.sql
-*.tar.gz
-*.zip
-*.env
+# Ignore everything
+/*
+
+# Except these folders/files
+!wp-content/
+!wp-content/themes/
+!wp-content/themes/your-theme/**
+!wp-content/plugins/
+!wp-content/plugins/your-plugin/**
+
+# Still ignore uploads, cache, etc.
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore sensitive files
 wp-config.php
 .htaccess
+*.sql
+*.log
