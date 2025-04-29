@@ -1,0 +1,14 @@
+# WordPress core files - don't track
+/wp-admin/
+/wp-includes/
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-*
+/*.log
+*.sql
+*.tar.gz
+*.zip
+*.env
+wp-config.php
+.htaccess
